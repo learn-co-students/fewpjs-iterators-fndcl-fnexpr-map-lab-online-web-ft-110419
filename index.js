@@ -13,7 +13,7 @@ const tutorials = [
 
 
 const titleCased = () => {
-  let newTutorials = tutorials.map(phrase => makeUppercase(phrase))
+  let newTutorials = tutorials.map(makeUppercase)
   console.log(newTutorials)
   return newTutorials
 }
