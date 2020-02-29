@@ -11,6 +11,21 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+let lowerCaseTutorials = tutorials.map(phrase => phrase.toLowerCase());
+
+
+function titleCased(tutorials) {
+  // this returns an array of arrays of each phrase split in an a array.
+let splitting = lowerCaseTutorials.map(phrase => phrase.split(" ")); 
+/* array maps over splitting, takes each array and maps over it, then grabs the first character of each word
+   and capitalizes it, while slicing off each word and adding it to the capitalized letter */
+let array = splitting.map(word => word.map(char => char[0].toUpperCase() + char.slice(1)));
+// final array then iterates over the arrays and joins them.
+let finalArray = array.map(array => array.join(" "));
+return finalArray
 }
+
+titleCased(tutorials);
+
+// array1.map(element => element[0].toUpperCase() + element.slice(1));
+//  => (3) ["Amy", "Brad", "Chad"]
