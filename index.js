@@ -27,5 +27,14 @@ return finalArray
 
 titleCased(tutorials);
 
-// array1.map(element => element[0].toUpperCase() + element.slice(1));
-//  => (3) ["Amy", "Brad", "Chad"]
+/* All of this returns: 
+["What Does The This Keyword Mean?", 
+"What Is The Contutorialuctor Oo Pattern?", 
+"Implementing Blockchain Web Api", 
+"The Test Driven Development Workflow", 
+"What Is Nan And How Can We Check For It", 
+"What Is The Difference Between Stoppropagation And Preventdefault?", 
+"Immutable State And Pure Functions", 
+"What Is The Difference Between == And ===?", 
+"What Is The Difference Between Event Capturing And Bubbling?", 
+"What Is Jsonp?"] */
