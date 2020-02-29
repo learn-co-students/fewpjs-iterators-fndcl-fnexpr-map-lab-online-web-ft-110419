@@ -42,12 +42,12 @@ titleCased(tutorials);
 /* but the test expects this instead:
 
 ["What Does The This Keyword Mean?",
-"What Is The Contutorialuctor OO Pattern?",
-"Implementing Blockchain Web API",
+"What Is The Contutorialuctor OO Pattern?", <------ OO 
+"Implementing Blockchain Web API", <--- API
 "The Test Driven Development Workflow",
-"What Is NaN And How Can We Check For It",
-"What Is The Difference Between StopPropagation And PreventDefault?",
+"What Is NaN And How Can We Check For It", <----- NaN
+"What Is The Difference Between StopPropagation And PreventDefault?", <----StopPropagation And PreventDefault
 "Immutable State And Pure Functions",
 "What Is The Difference Between == And ===?",
 "What Is The Difference Between Event Capturing And Bubbling?",
-"What Is JSONP?"] */
+"What Is JSONP?"] <------ JSONP */ 
