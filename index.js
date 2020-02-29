@@ -15,7 +15,7 @@ let lowerCaseTutorials = tutorials.map(phrase => phrase.toLowerCase());
 
 
 function titleCased(tutorials) {
-  // this returns an array of arrays of each phrase split in an a array.
+  // splitting returns an array of arrays of each phrase split in an a array.
 let splitting = lowerCaseTutorials.map(phrase => phrase.split(" ")); 
 /* array maps over splitting, takes each array and maps over it, then grabs the first character of each word
    and capitalizes it, while slicing off each word and adding it to the capitalized letter */
