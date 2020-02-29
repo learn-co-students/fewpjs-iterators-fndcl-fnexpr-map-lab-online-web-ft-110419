@@ -1,4 +1,4 @@
-const tutorials = [
+const a = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
   'implementing Blockchain Web API',
@@ -11,43 +11,15 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-let lowerCaseTutorials = tutorials.map(phrase => phrase.toLowerCase());
-
-
-function titleCased(tutorials) {
+function titleCased() {
   // splitting returns an array of arrays of each phrase split in an a array.
-let splitting = lowerCaseTutorials.map(phrase => phrase.split(" ")); 
+let splitting = a.map(phrase => phrase.split(" ")); 
 /* array maps over splitting, takes each array and maps over it, then grabs the first character of each word
    and capitalizes it, while slicing off each word and adding it to the capitalized letter */
-let array = splitting.map(word => word.map(char => char[0].toUpperCase() + char.slice(1)));
+let array = splitting.map(array => array.map(word => word[0].toUpperCase() + word.slice(1)));
 // final array then iterates over the arrays and joins them.
 let finalArray = array.map(array => array.join(" "));
 return finalArray
 }
 
-titleCased(tutorials);
-
-/* All of this returns: 
-["What Does The This Keyword Mean?", 
-"What Is The Contutorialuctor Oo Pattern?", 
-"Implementing Blockchain Web Api", 
-"The Test Driven Development Workflow", 
-"What Is Nan And How Can We Check For It", 
-"What Is The Difference Between Stoppropagation And Preventdefault?", 
-"Immutable State And Pure Functions", 
-"What Is The Difference Between == And ===?", 
-"What Is The Difference Between Event Capturing And Bubbling?", 
-"What Is Jsonp?"] */
-
-/* but the test expects this instead:
-
-["What Does The This Keyword Mean?",
-"What Is The Contutorialuctor OO Pattern?", <------ OO 
-"Implementing Blockchain Web API", <--- API
-"The Test Driven Development Workflow",
-"What Is NaN And How Can We Check For It", <----- NaN
-"What Is The Difference Between StopPropagation And PreventDefault?", <----StopPropagation And PreventDefault
-"Immutable State And Pure Functions",
-"What Is The Difference Between == And ===?",
-"What Is The Difference Between Event Capturing And Bubbling?",
-"What Is JSONP?"] <------ JSONP */ 
+titleCased();
