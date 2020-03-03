@@ -13,7 +13,7 @@ const tutorials = [
 
 
 const titleCased = () => {
-    let newTuto = tutorials.map(capatalize)
+    let newTuto = tutorials.map(capatalize(sentence))
     return newTuto
 }
 
