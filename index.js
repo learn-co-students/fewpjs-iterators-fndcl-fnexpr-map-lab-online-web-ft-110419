@@ -14,9 +14,9 @@ const tutorials = [
 const titleCased = (str) => {
   return tutorials.map(word => {
     let words = word.split(' ')
-    let capitalizedWords =
+    let capWords =
       words.map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    let res = capitalizedWords.join(' ')
+    let res = capWords.join(' ')
     return res
   })
 }
